@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">onchrome</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,443</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">onfirefox</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,765</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">17,208</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">onchrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ebanking.scripts.SGrid</td><td><a href="#m0">Gd</a></td><td rowspan="1">1639316652088</td><td rowspan="1">3363</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">onfirefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ebanking.scripts.SGrid</td><td><a href="#m1">Gd</a></td><td rowspan="1">1639316652087</td><td rowspan="1">13723</td></tr></tbody>
+</table>
+<h2>onchrome</h2><h3 id="m0">com.ebanking.scripts.SGrid#Gd</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 96.0.4664.93 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Madans-MacBook-Pro.local&apos;, ip: &apos;2001:bb6:60e:1a00:c5fa:822b:b58f:6bca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
+Driver info: driver.version: unknown
+remote stacktrace: 0   chromedriver                        0x0000000108c90029 chromedriver + 2740265
+1   chromedriver                        0x0000000109343cd3 chromedriver + 9768147
+2   chromedriver                        0x0000000108a1fd58 chromedriver + 183640
+3   chromedriver                        0x0000000108a456d6 chromedriver + 337622
+4   chromedriver                        0x0000000108a413c3 chromedriver + 320451
+5   chromedriver                        0x0000000108a3da56 chromedriver + 305750
+6   chromedriver                        0x0000000108a75ed0 chromedriver + 536272
+7   chromedriver                        0x0000000108a70d63 chromedriver + 515427
+8   chromedriver                        0x0000000108a47901 chromedriver + 346369
+9   chromedriver                        0x0000000108a48b35 chromedriver + 351029
+10  chromedriver                        0x0000000108c57b4c chromedriver + 2509644
+11  chromedriver                        0x0000000108c6aa81 chromedriver + 2587265
+12  chromedriver                        0x0000000108c3d4f1 chromedriver + 2401521
+13  chromedriver                        0x0000000108c6be4f chromedriver + 2592335
+14  chromedriver                        0x0000000108c4daec chromedriver + 2468588
+15  chromedriver                        0x0000000108c85358 chromedriver + 2696024
+16  chromedriver                        0x0000000108c854eb chromedriver + 2696427
+17  chromedriver                        0x0000000108c94f38 chromedriver + 2760504
+18  libsystem_pthread.dylib             0x00007fff204588fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff20454443 thread_start + 15
+
+Command duration or timeout: 2.64 seconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.ebanking.scripts.SGrid.Gd(SGrid.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 96.0.4664.93 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Madans-MacBook-Pro.local&apos;, ip: &apos;2001:bb6:60e:1a00:c5fa:822b:b58f:6bca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
+Driver info: driver.version: unknown
+remote stacktrace: 0   chromedriver                        0x0000000108c90029 chromedriver + 2740265
+1   chromedriver                        0x0000000109343cd3 chromedriver + 9768147
+2   chromedriver                        0x0000000108a1fd58 chromedriver + 183640
+3   chromedriver                        0x0000000108a456d6 chromedriver + 337622
+4   chromedriver                        0x0000000108a413c3 chromedriver + 320451
+5   chromedriver                        0x0000000108a3da56 chromedriver + 305750
+6   chromedriver                        0x0000000108a75ed0 chromedriver + 536272
+7   chromedriver                        0x0000000108a70d63 chromedriver + 515427
+8   chromedriver                        0x0000000108a47901 chromedriver + 346369
+9   chromedriver                        0x0000000108a48b35 chromedriver + 351029
+10  chromedriver                        0x0000000108c57b4c chromedriver + 2509644
+11  chromedriver                        0x0000000108c6aa81 chromedriver + 2587265
+12  chromedriver                        0x0000000108c3d4f1 chromedriver + 2401521
+13  chromedriver                        0x0000000108c6be4f chromedriver + 2592335
+14  chromedriver                        0x0000000108c4daec chromedriver + 2468588
+15  chromedriver                        0x0000000108c85358 chromedriver + 2696024
+16  chromedriver                        0x0000000108c854eb chromedriver + 2696427
+17  chromedriver                        0x0000000108c94f38 chromedriver + 2760504
+18  libsystem_pthread.dylib             0x00007fff204588fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff20454443 thread_start + 15
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Madans-MacBook-Pro.local&apos;, ip: &apos;2001:bb6:60e:1a00:c5fa:822b:b58f:6bca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)
+	at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.util.Collections$2.tryAdvance(Collections.java:4820)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:397)
+	at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:720)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+	at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.lang.Thread.run(Thread.java:831)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>onfirefox</h2><h3 id="m1">com.ebanking.scripts.SGrid#Gd</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Madans-MacBook-Pro.local&apos;, ip: &apos;2001:bb6:60e:1a00:c5fa:822b:b58f:6bca%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 90.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210721174149, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 5176, moz:profile: /var/folders/94/qwhdw3zs7_z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: f92645aa-c484-7a4e-bf01-363...}
+Session ID: f92645aa-c484-7a4e-bf01-36302c764277
+*** Element info: {Using=xpath, value=//input[@id=&apos;txtuId&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
+	at com.ebanking.pages.Ranfordpage.usernme(Ranfordpage.java:26)
+	at com.ebanking.scripts.SGrid.Gd(SGrid.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

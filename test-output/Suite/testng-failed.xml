@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="onchrome(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="com.ebanking.scripts.SGrid">
+        <methods>
+          <include name="Gd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ebanking.scripts.SGrid -->
+    </classes>
+  </test> <!-- onchrome(failed) -->
+  <test thread-count="5" parallel="tests" name="onfirefox(failed)">
+    <parameter name="browsers" value="firefox"/>
+    <classes>
+      <class name="com.ebanking.scripts.SGrid">
+        <methods>
+          <include name="Gd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ebanking.scripts.SGrid -->
+    </classes>
+  </test> <!-- onfirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
